@@ -1,0 +1,662 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+    
+    
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+
+    border-radius: 0px;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    /* background-color: transparent;
+    background: none; */
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body {
+    background: url(./images/background.png) repeat center;
+    background-size: cover;
+}
+
+
+/* Голова сайта */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), url(./images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+}
+
+.container-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.line-height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.content-header {
+    color: #fff;
+    font-size: 1.7em;
+
+    padding: 20px;
+
+}
+
+.content-header .name-person {
+    color: #fff;
+    font-size: 3em;
+}
+
+.audio-header {
+    display: flex;
+    justify-content: center;
+}
+
+/* начало первой секции сайта */
+
+.section-1 {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    text-align: center;
+}
+
+.container-section-text {
+    width: 100%;
+    max-width: 900px;;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section {
+    font-size: 2.5em;
+    color: #000;
+    padding-bottom: 10px;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content-section span {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    display: block;
+    font-size: .8em;
+    color: #000;
+}
+
+/* Начало второй секции */
+
+.section-2 {
+    width: 100%;
+}
+
+.content-section-2 {
+    font-size: 2em;
+    line-height: 1.6;
+}
+
+.content-section-2 span {
+    font-size: 1.7em;
+}
+
+/* Начало третьей секции */
+
+.section-3 {
+    width: 100%;
+}
+
+.section-3-w500px {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.content-section-3 {
+    padding-bottom: 10px;
+    font-size: 2em;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content-section-3 span {
+    font-size: 1.7em;
+}
+.img-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.img-location {
+    width: 500px;
+    filter: grayscale(100%);
+}
+
+.content-section-3-1 {
+    line-height: 2;
+}
+
+.content-section-3-2 {
+    font-size: 2em;
+    padding: 20px 10px 30px;
+}
+
+iframe {
+    width: 80vh;
+    height: 60vh;
+
+    padding: 10px;
+}
+
+/* секция дресс кода */
+
+.heart-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.heart {
+    width: 50vh;
+    height:65vh;
+    padding: 20px;
+
+    justify-content: space-around;
+}
+
+/* Начало четвертой секции */
+
+.section-4 {
+    width: 100%;
+}
+
+.content-section-4-text-timeing {
+    font-size: 2em;
+    padding: 20px;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content-section-4-time {
+    font-size: 3em;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-section-4-text {
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Начало пятой секции */
+
+.section-5 {
+    width: 100%;
+}
+
+.name-form {
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.section-5-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 10px;
+}
+
+.section-5-form span {
+    font-size: 1.4em;
+    padding: 0px 10px;
+}
+
+.input-write-text {
+    width: 100%;
+    height: 60px;
+
+    border: 1px solid #000;
+    margin: 10px 10px;
+    padding: 20px;
+
+    font-size: 1.4em;
+    
+}
+
+.label-chekbox {
+    margin: 10px;
+}
+
+.checkbox-btn {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.checkbox-btn:checked {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.btn-send-form {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.btn-form {
+    width: 200px;
+    height: 50px;
+
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
+
+    -webkit-appearance: none;
+
+    letter-spacing: 2px;
+}
+
+.btn-form:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* КОНЕЦ СЕКЦИИ НАЧАЛАО ТАЙМЕРА ОТЧЕСТА*/
+
+.timer {
+    padding: 20px;
+}
+
+.timer span {
+    font-size: 2em;
+    line-height: 2;
+}
+
+.timer__items {
+    display: flex;
+    justify-content: center;
+
+    font-size: 4em;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: .4em;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+.ending {
+    padding: 5px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .conatiner-header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content-header {
+        font-size: 3vh;
+    }
+    .content-header .name-person {
+        font-size: 8vh;
+    }
+
+    /* Первая секция */
+
+    .section-1 {
+        width: 100vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content-section {
+    font-size: 4vh;
+    }
+
+    .content-section span {
+        padding: 5px;
+        font-size: 2.7vh;
+    }
+
+    /* Вторая секция */
+
+    .content-section-2 {
+        font-size: 3.2vh;
+    }
+    
+    .content-section-2 span {
+        font-size: 4.2vh;
+    }
+
+    /* Третья секция */
+
+    .content-section-3 {
+        font-size: 5vh;
+    }
+    
+
+    .content-section-3-1 {
+        font-size: 2.5vh;
+    }
+
+    .content-section-3-2 {
+        font-size: 3.2vh;
+    }
+
+    iframe {
+        width: 45vh;
+        height: 55vh;
+    }
+
+    /*  */
+
+    .heart-svg {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .heart {
+        width: 50%;
+        height: 315px;
+        padding: 5px;
+    }
+
+   /* Четвертая секция */
+   .content-section-4-text-timeing {
+        font-size: 5vh;
+   }
+
+   .content-section-4-time {
+        font-size: 4.7vh;
+    }
+
+   .content-section-4-text {
+        font-size: 4.4vh;
+    }
+
+   /* шестая секция - c таймером */
+
+   .timer span {
+        font-size: 3.1vh;
+        line-height: 2;
+    }   
+    .name-form {
+        font-size: 5vh;
+    }
+
+   .input-write-text {
+        width: 90%;
+    }
+    
+    .section-5-form span {
+        font-size: 2.3vh;
+    }
+
+}
+
+/* Для экранов меньше 380px */
+
+@media screen and (max-width: 380px) {
+    .header {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .conatiner-header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content-header {
+        font-size: 3vh;
+    }
+    .content-header .name-person {
+        font-size: 8vh;
+    }
+
+    /* Первая секция */
+
+    .section-1 {
+        width: 100vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content-section {
+    font-size: 4vh;
+    }
+
+    .content-section span {
+        padding: 5px;
+        font-size: 3.5vh;
+    }
+
+    /* Вторая секция */
+
+    .content-section-2 {
+        font-size: 3.2vh;
+    }
+    
+    .content-section-2 span {
+        font-size: 4.2vh;
+    }
+
+    /* Третья секция */
+
+    .content-section-3 {
+        font-size: 5vh;
+    }
+    
+
+    .content-section-3-1 {
+        font-size: 2.5vh;
+    }
+
+    .content-section-3-2 {
+        font-size: 3.2vh;
+    }
+
+    iframe {
+        width: 55vh;
+        height: 55vh;
+    }
+
+   /* Четвертая секция */
+   .content-section-4-text-timeing {
+        font-size: 5vh;
+   }
+
+   .content-section-4-time {
+        font-size: 4.7vh;
+    }
+
+   .content-section-4-text {
+        font-size: 4.4vh;
+    }
+
+   /* шестая секция - c таймером */
+
+   .timer span {
+        font-size: 3.1vh;
+        line-height: 2;
+    }   
+    .name-form {
+        font-size: 5vh;
+    }
+
+   .input-write-text {
+        width: 90%;
+    }
+    
+    .section-5-form span {
+        font-size: 2.3vh;
+    }
+
+}
+
